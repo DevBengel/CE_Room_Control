@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ExperTeach Room Control</title>
+    <style>
+      .load {
+        float: center;
+        width: 600px;
+        border: 0px solid black;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+      .load th, .load td {
+        padding: 6px;
+        text-align: center;
+      }
+    </style>
+    {{ turbo() }}
+  </head>
+  <body>
+    {% block Header %}{% endblock %}
+    {% include "dashboard.html" %}
+  </body>
+</html>
